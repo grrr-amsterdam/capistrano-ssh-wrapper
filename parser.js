@@ -48,7 +48,7 @@ var parser = module.exports = {
     },
 
     _parseSshServerSeparateUserLine: function(line) {
-        var userhost = /server ['"]+(.*)['"]+user: ['"]+(.*)['"]/g;
+        var userhost = /server ['"]+(\S*)['"]+\W* user:\s*['"]+(\S*)['"]+/g;
         var match = userhost.exec(line);
 
         if (!match || match.length < 2) {
