@@ -8,8 +8,10 @@ const config    = require('./config.js')
 var wrapper = module.exports = {
 
     /**
-     * Throws an error if configuration was not found.
-     * @return Promise
+     * Executes a shell command over SSH, using local Capistrano configuration.
+     * @param   String  target  Target environment name
+     * @param   String  command Command to execute
+     * @return  Promise
      */
     exec: function(target, command) {
         if (!target) {
@@ -26,6 +28,17 @@ var wrapper = module.exports = {
         }
 
         return sshwrap.exec(ssh_config, 'cd ' + ssh_config.dir + ' && ' + command)
+    },
+
+
+    /**
+     * Returns the content of a file over SSH, using local Capistrano configuration.
+     * @param   String  target  Target environment name
+     * @param   String  path    Path to file, absolute or relative to the Capistrano path
+     * @return Promise
+     */
+    getFile: function(target, path) {
+        return wrapper.exec(target, 'cat ' + path)
     }
 
 };
