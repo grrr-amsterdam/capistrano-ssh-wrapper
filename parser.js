@@ -62,7 +62,6 @@ var parser = module.exports = {
     },
 
     _parseSshDeployLine: function(line) {
-        console.log(line)
         var dir = /:deploy_to, \W*['"]+(.*)['"]+/g;
         var match = dir.exec(line);
         if (match.length < 1) {
