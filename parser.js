@@ -62,7 +62,8 @@ var parser = module.exports = {
     },
 
     _parseSshDeployLine: function(line) {
-        var dir = /:deploy_to, ['"]+(.*)['"]+/g;
+        console.log(line)
+        var dir = /:deploy_to, \W*['"]+(.*)['"]+/g;
         var match = dir.exec(line);
         if (match.length < 1) {
             var e = 'Could not find SSH deploy dir config.'
