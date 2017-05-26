@@ -37,10 +37,7 @@ var parser = module.exports = {
         var userhost = /server ['"]+(.*)@(.*)['"]+/g;
         var match = userhost.exec(line);
 
-        if (
-            !('length' in match) ||
-            match.length < 2
-        ) {
+        if (!match || match.length < 2) {
             return
         }
 
@@ -54,10 +51,7 @@ var parser = module.exports = {
         var userhost = /server ['"]+(.*)['"]+user: ['"]+(.*)['"]/g;
         var match = userhost.exec(line);
 
-        if (
-            !('length' in match) ||
-            match.length < 2
-        ) {
+        if (!match || match.length < 2) {
             return
         }
 
