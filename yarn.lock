@@ -100,8 +100,8 @@ shelljs@^0.7.7:
     rechoir "^0.6.2"
 
 ssh-wrapper@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ssh-wrapper/-/ssh-wrapper-1.0.1.tgz#166e8df3fbf1e1c58f01167d499085099e94db67"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ssh-wrapper/-/ssh-wrapper-1.0.2.tgz#b7ae65f5b226d0cf40c9c859a1ffad27988f297b"
   dependencies:
     fs "^0.0.1-security"
     ssh2 "^0.5.4"
