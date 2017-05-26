@@ -25,7 +25,7 @@ var wrapper = module.exports = {
             return Promise.reject('No Capistrano SSH config was found.')
         }
 
-        return sshwrap.exec(ssh_config, command)
+        return sshwrap.exec(ssh_config, 'cd ' + ssh_config.dir + ' && ' + command)
     }
 
 };
