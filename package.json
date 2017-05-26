@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "shelljs": "^0.7.7",
     "ssh-wrapper": "^1.0.1"
   }
 }
