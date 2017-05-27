@@ -3,7 +3,7 @@
  * @author David Spreekmeester <david@grrr.nl>
  */
 const sshwrap   = require('ssh-wrapper')
-const config    = require('./config.js')
+const config    = require('capistrano-config')
 
 var wrapper = module.exports = {
 
@@ -22,7 +22,7 @@ var wrapper = module.exports = {
             return Promise.reject('No command given to execute.')
         }
 
-        var ssh_config = config.findSshConfig(target)
+        var ssh_config = config.getConfig(target)
         if (!ssh_config) {
             return Promise.reject('No Capistrano SSH config was found.')
         }
