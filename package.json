@@ -7,7 +7,7 @@
   },
   "name": "capistrano-ssh-wrapper",
   "description": "[![Greenkeeper badge](https://badges.greenkeeper.io/grrr-amsterdam/capistrano-ssh-wrapper.svg)](https://greenkeeper.io/)",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "wrapper.js",
   "devDependencies": {},
   "scripts": {
