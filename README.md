@@ -1,4 +1,6 @@
 # Capistrano SSH Wrapper
+Executes a shell command over SSH, using a connection from a local Capistrano configuration file.
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/grrr-amsterdam/capistrano-ssh-wrapper.svg)](https://greenkeeper.io/)
 
 
