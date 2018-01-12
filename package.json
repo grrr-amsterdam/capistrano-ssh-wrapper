@@ -2,7 +2,7 @@
   "dependencies": {
     "capistrano-config": "^1.0.2",
     "fs": "^0.0.1-security",
-    "shelljs": "^0.7.7",
+    "shelljs": "^0.8.0",
     "ssh-wrapper": "^1.0.1"
   },
   "name": "capistrano-ssh-wrapper",
