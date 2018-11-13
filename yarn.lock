@@ -106,6 +106,14 @@ shelljs@^0.7.7:
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
+shelljs@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
+
 ssh-wrapper@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ssh-wrapper/-/ssh-wrapper-1.0.2.tgz#b7ae65f5b226d0cf40c9c859a1ffad27988f297b"
